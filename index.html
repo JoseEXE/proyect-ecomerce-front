@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce :: José</title>
+  <script defer src="js/apps.js"></script>
+  <script src="js/jquery-3.6.2.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barre de menu -->
+  <nav class="navbarecomer navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <button class=" btn position-relative text-bg-light btncharriot" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Voir mon panier
+          <span class="position-absolute top-0 start-800 translate-middle badge rounded-pill bg-danger cantite">
+            <span class="visually-hidden"></span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin Barre de menu -->
+
+
+
+  <!-- Offcanvas Droit -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Mon panier</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body panier">
+
+      <div class='col-md-6 col-sm-6'>
+      </div>
+    </div>
+    <div class="offcanvas-body total row">
+    </div>
+    <div class="offcanvas-body panierP">
+      <div class="card" style="width: 22rem;">
+        <ul class="divsm list-group list-group-flush">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Offcanvas Droit============ -->
+
+
+
+
+
+  <header>
+    <section class="section-intro">
+      <article class="h-50 d-inline-block">
+      </article>
+      <!-- Toasts a imprimir Rapport final-->
+      <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100"
+        id="rapportPrin">
+        <!-- Then put toasts within -->
+        <div class="toast bg-light text-black" role="alert" aria-live="assertive" aria-atomic="true"
+          data-bs-autohide="false">
+          <div class="toast-header bg-light text-black">
+            <strong class="me-auto">Valider mes informations et mon panier</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="container">
+            <div class="toast-body">
+              <h4>Vos Informations</h4>
+            </div>
+            <div class="fs-6 row" id="rapport1">
+            </div>
+            <div class="toast-body">
+              <h4>Votre panier</h4>
+            </div>
+            <div class="fs-6 row" id="rapport2">
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+                <button type="button" class="btn btn-secondary btn-sm fermer" data-bs-dismiss="toast">Fermer </button>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <button type="button" class="btn btn-primary btn-sm finaliser">Finaliser la commande et payer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Toasts a imprimir Rapport final--> 
+    </section>
+
+
+
+    <!-- Offcanvas Gauche formulaire-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Valider ma commande</h5>
+        <button type="button" class="btn-close btn-closex" data-bs-toggle="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Veuillez rentrer vous information dans les champs de saisi ci-dessous.
+        </div>
+        <div class="dropdown mt-3">
+          <input class="form-control form-control-sm" type="text" placeholder="Nom" id="Nom" name="Nom"
+            aria-label=".form-control-sm example">
+        </div>
+        <div>
+          <p class="errorNom error"></p>
+        </div>
+
+        <div class="dropdown mt-3">
+          <input class="form-control form-control-sm" type="text" placeholder="Prénom" id="Prenom" name="Prenom"
+            aria-label=".form-control-sm example">
+        </div>
+        <div>
+          <p class="errorPrenom error"></p>
+        </div>
+
+        <div class="dropdown mt-3">
+          <input class="form-control form-control-sm" type="text" placeholder="Email" id="Email" name="Email"
+            aria-label=".form-control-sm example">
+        </div>
+        <div>
+          <p class="errorEmail error"></p>
+        </div>
+        <div>
+
+        </div>
+
+        <div class="dropdown mt-3">
+          <input class="form-control form-control-sm" type="text" placeholder="N° Tél" id="Tel" name="Tel"
+            aria-label=".form-control-sm example">
+        </div>
+        <div>
+          <p class="errorTel error"></p>
+        </div>
+
+        <div class="dropdown mt-3 ">
+          <input class="form-control form-control-sm" type="text" placeholder="Adresse" id="Adresse" name="Adresse"
+            aria-label=".form-control-sm example">
+        </div>
+        <div>
+          <p class="errorAdresse error"></p>
+        </div>
+
+        <div class="prop">
+          <button type="button" class="btn btn-primary envform">Enregistrer</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- FIN Offcanvas Gauche formulaire============ -->
+
+
+  </header>
+
+
+<!-- Contenu des articles  -->
+  <section>
+    <section class="padding-y">
+      <div class="container">
+        <header class="section-heading">
+          <h3 class="section-title"></h3>
+        </header>
+        <div class="row improd">
+        </div> <!-- row end.// -->
+      </div> <!-- container end.// -->
+    </section>
+  </section>
+<!-- FIN Contenu des articles  -->
+
+
+</body>
+
+</html>

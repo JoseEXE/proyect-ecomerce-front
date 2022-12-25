@@ -1,0 +1,54 @@
+.section-intro {
+    background-image: url(../img/illustration.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    border: 0px solid #333;
+}
+.prodprin:hover {
+    background-color: bisque;
+}
+.prodprin {
+    padding: 3px;
+}
+.fermer,
+.finaliser {
+    margin: 3px;
+}
+.navbarecomer {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.cantite {
+    display: none;
+}
+.divsm {
+    margin: 0;
+}
+.divsm1 {
+    padding: 10px;
+}
+.formul {
+    z-index: 110;
+}
+.prop {
+    text-align: center;
+    padding: 10px;
+}
+.error {
+    margin: 0;
+    font-size: small;
+    height: 8px;
+    color: red;
+}
+.toast {
+    z-index: 100;
+}
+.rapportText {
+    font-size: small;
+}
+.totalrapport {
+    background-color: rgb(239, 194, 194);
+    color: brown;
+}

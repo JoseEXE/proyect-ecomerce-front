@@ -1,0 +1,52 @@
+{ 
+"produit" : [
+    {
+      "nom": "Blouson Cuir Homme OSX",
+      "image": "../img/01.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 225
+    },
+    {
+      "nom": "POLO CINTRE SLIM FIT EN COTON BASIC Bleu",
+      "image": "../img/02.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 75
+    },        
+    {
+      "nom": "Robe rose croisée à boucler",
+      "image": "../img/03.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 50
+    },
+    {
+      "nom": "Sneakers Adidas Original Homme",
+      "image": "../img/04.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 159
+    },
+    {
+      "nom": "Pantalon jogging Nike Just Do It - Noir",
+      "image": "../img/05.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 27
+    },
+    {
+      "nom": "Sportwear Femme Gris",
+      "image": "../img/06.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 20
+    },
+    {
+      "nom": "Doudoune Rouge Homme",
+      "image": "../img/07.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 60
+    },
+    {
+      "nom": "UNDER ARMOUR BLITZING 3.0 MARINE",
+      "image": "../img/08.JPG",
+      "descrption": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, laboriosam.",
+      "prix": 22
+    }
+  ]
+}
