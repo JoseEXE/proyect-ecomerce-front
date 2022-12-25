@@ -324,9 +324,41 @@ $.ajax({
     $(".finaliser").on("click", function () {
       window.location.replace("index2.html");
     });
+    
   },
 
   error: function (xhr) {
     console.log(xhr.status);
   },
 });
+
+
+//animation
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(100)
+  .typeString("<span class='animation1'>C'est </span> ")
+  .typeString("<span class='animation2'>NOEL</span>, ")
+  .typeString("<span class='animation1'> je peux maintenant m'amuser avec: ")
+  .pauseFor(300)
+  //.deleteChars(10)
+  .typeString("<span class='animation2'>HTML</span>")
+  .pauseFor(1000)
+  .deleteChars(4)
+  .typeString("<span class='animation2'>CSS</span>")
+  .pauseFor(1000)
+  .deleteChars(3)
+  .typeString("<span class='animation2'>JS</span>")
+  .pauseFor(1000)
+  .deleteChars(2)
+  .typeString("<span class='animation2'>JQUERY</span>")
+  .pauseFor(1000)
+  .deleteChars(6)
+  .start();
+
